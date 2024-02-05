@@ -17,7 +17,7 @@ h1 {
     width:100%;
     margin-bottom: 20px;
 }
-textarea {
+textarea { /* El area donde se pondran las notas */
     width:100%;
     font-size: 24px;
     padding: 16px;
@@ -60,7 +60,7 @@ textarea {
     max-width: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* El espacio entre nota y nota*/
     padding: 16px;
     background-color: #FFFFFF; /* Fondo blanco */
     border-radius: 16px; /* Contornos ovalados */
@@ -69,6 +69,11 @@ textarea {
     word-wrap: break-word;
     box-sizing: border-box; /* Ajuste para incluir padding en el ancho y alto */
     white-space: pre-line;
+ }
+
+ .note p {
+    padding: 0px;
+    margin: 0px;
  }
  
 .note button { /*boton eliminar */
@@ -85,11 +90,11 @@ textarea {
     border-radius: 16px; /* Contornos ovalados para el botón */
     Width: 83px;
     Height: 30px;
-    Padding: 4px, 16px, 4px, 16px;
+    Padding: 4px, 16px;
     box-sizing: border-box;
 }
 .note button:hover {
-    background-color: #dfd8d8;
+    background-color: #c5c2c2;
 }
 @media screen and (max-width: 600px) {
     .button-add {

@@ -26,8 +26,7 @@ function showList() {
     noteElement.classList.add('note');
     noteElement.innerHTML = `
     <p>${note.text}</p>
-    <button onclick="deleteNote('${note.id}')">Borrar</button>
-`;
+    <button onclick="deleteNote('${note.id}')">Borrar</button>`;
     sectionNotes.appendChild(noteElement);//
   });
 }
