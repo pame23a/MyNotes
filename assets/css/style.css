@@ -2,28 +2,21 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     align-items: center;
     background: #F2F2F2;
-
 }
-
-
 .container {
     max-width: 600px;
     padding: 20px;
     margin: 0 auto; 
 }
-
 h1 {
     font-size: 32px;
     text-align: center;
     color: #333333;
 }
-
-
 .form {
     width:100%;
     margin-bottom: 20px;
 }
-
 textarea {
     width:100%;
     font-size: 24px;
@@ -34,8 +27,8 @@ textarea {
     border-radius: 16px;
     border: 2px solid rgb(88, 82, 82);
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
-
 .form textarea::placeholder {
     /*Aqui le estoy aplicando estilos a lo que va dentro del input  */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -43,9 +36,8 @@ textarea {
     /* Ajusta el tamaño del placeholder según tus necesidades */
     color: #BDBDBD;
 }
-
 .button-add { /*Boton agregar */
-    width:106%;
+    width:100%;
     height: 45px;
     border-radius: 16px;
     padding: 8px, 16px;
@@ -59,9 +51,13 @@ textarea {
     text-align: center;
     cursor: pointer;
     /* Cambia el cursor al pasar sobre el botón */
+    box-sizing: border-box;
+}
+.button-add:hover{
+    background-color: #696666;
 }
 .note {
-    width: 106%;
+    width: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
@@ -72,32 +68,33 @@ textarea {
     position: relative;
     box-sizing: border-box; /* Ajuste para incluir padding en el ancho y alto */
 }
-
-.note textarea {
-    width: 100%;
-    font-size: 24px;
-    padding: 10px;
-    height: 100px;
-    border: none; /* Elimina el borde del textarea */
-    background-color: transparent; /* Fondo transparente para que el fondo blanco de .note sea visible */
-    outline: none; /* Elimina el contorno predeterminado al hacer clic en el textarea */
-    resize: none; /* Evita la redimensión del textarea por el usuario */
-    color: #000000; /* Letra negra */
-    border-radius: 16px; /* Contornos ovalados */
-    box-sizing: border-box; /* Ajuste para incluir padding en el ancho y alto */
-}
-
 .note button {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 10px;
-    background-color: #808080;
-    color: white;
+    background-color: #E0E0E0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4F4F4F;
     border: none;
     cursor: pointer;
-    border-radius: 50%; /* Contornos ovalados para el botón */
+    border-radius: 16px; /* Contornos ovalados para el botón */
+    Width: 83px;
+    Height: 30px;
+    Padding: 4px, 16px, 4px, 16px;
+    box-sizing: border-box;
+}
+.note button:hover {
+    background-color: #dfd8d8;
+}
+@media screen and (max-width: 600px) {
+    .button-add {
+        font-size: 18px;
+    }
+
+    .note button {
+        font-size: 14px;
+    }
 }
 
-.note button:hover {
-    background-color: #4F4F4F;
-}
